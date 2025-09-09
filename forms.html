@@ -19,25 +19,22 @@
     <h1>Contact us</h1>
     <h2>our office hours are between 7 am to 9 pm</h2>
     </header>
+
     <main>
-<form>
-    <div>
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" placeholder="Enter your username">
-    
-    <br> 
         
-    </div>
-    <div>
+<form action="register_account.html" method="post">
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username" placeholder="Enter your username" autofocus required>
+
         <label for="first_name">First name:</label>
-        <input type="text" id="first_name" name="first_name" placeholder="Enter your username">
+        <input type="text" id="first_name" name="first_name" placeholder="Enter your first name" autofocus required>
     <div>
         <label for="email">email:</label>
-        <input type="text" id="email" name="email" placeholder="Enter your email">
+        <input type="email" name="email" placeholder="Enter your email" id="email" required>
+    <div>
     <br> 
- 
-<label for="multi-topping">subject: </label>
-<select id="multi-topping" name="toppings" multiple size="4">
+<label for="what_do_you_need_help_with?:">what do you need help with?: </label>
+<select name="what_do_you_need_help_with?" id="what_do_you_need_help_with?">
     <option value="pepperoni">bookings</option>
     <option value="sausage" selected>trouble with website</option>
     <option value="mushrooms">pool</option>
@@ -45,7 +42,6 @@
     <option value="olives">wifi</option>
     <option value="olives">Tv channels</option>
     </select>
-        
     </div>
     <br>
      <label for="comments">Comments:</label>
@@ -53,7 +49,6 @@
     <button type="submit">Submit</button>
     <button type="reset">Reset</button>
     </div>
-
 </form> 
     </main>
 
